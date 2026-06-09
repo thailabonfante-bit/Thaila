@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cores principais */
+:root {
+    --verde-musgo: #556B2F;
+    --marrom-terracota: #A0522D;
+    --verde-lima: #ADFF2F;
+    --bg-light: #F5F5F5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--verde-musgo);
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--verde-lima);
+}
+
+/* Sections */
+section {
+    padding: 5% 5%;
+}
+
+.section-home {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-home .btn {
+    background-color: var(--verde-lima);
+    padding: 1rem 2rem;
+    color: #000;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.section-home .btn:hover {
+    background-color: #9ACD32;
+}
+
+/* Soluções */
+.cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Blog */
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--marrom-terracota);
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8B4513;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--verde-musgo);
+    color: #fff;
+}
